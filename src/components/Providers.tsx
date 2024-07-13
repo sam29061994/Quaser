@@ -1,5 +1,6 @@
 'use client';
 import { trpc } from '@/app/_trpc/client';
+import { getBaseUrl } from '@/lib/utils';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { httpBatchLink } from '@trpc/client';
 import { PropsWithChildren, useState } from 'react';
@@ -10,7 +11,7 @@ const Providers = ({ children }: PropsWithChildren) => {
     trpc.createClient({
       links: [
         httpBatchLink({
-          url: 'https://quaser.vercel.app/api/trpc',
+          url: `${getBaseUrl()}/api/trpc`,
         }),
       ],
     })
