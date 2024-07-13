@@ -57,11 +57,11 @@ const Testomonials = () => (
           </div>
           <p className='mt-8'>
             {' '}
-            As a legal professional, I deal with numerous PDFs daily. Quazer's
-            ability to provide instant summaries and detailed answers is a
-            game-changer. It has made my work much more efficient and
-            streamlined. This tool has dramatically improved my efficiency and
-            has become indispensable in my daily routine.
+            As a legal professional, I deal with numerous PDFs daily.
+            Quazer&apos;s ability to provide instant summaries and detailed
+            answers is a game-changer. It has made my work much more efficient
+            and streamlined. This tool has dramatically improved my efficiency
+            and has become indispensable in my daily routine.
           </p>
         </div>
         <div className='aspect-auto rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none'>
@@ -84,12 +84,13 @@ const Testomonials = () => (
             </div>
           </div>
           <p className='mt-8'>
-            I've been using Quazer for several months now, and I can't imagine
-            going back to my old way of handling PDFs. The AI's ability to
-            quickly parse and provide detailed summaries is nothing short of
-            miraculous. It's especially useful for academic research, where
-            diving into hundreds of pages is common. Quazer's real-time insights
-            help me pinpoint exactly what I need without the hassle.
+            I&apos;ve been using Quazer for several months now, and I can&apos;t
+            imagine going back to my old way of handling PDFs. The AI&apos;s
+            ability to quickly parse and provide detailed summaries is nothing
+            short of miraculous. It&apos;s especially useful for academic
+            research, where diving into hundreds of pages is common.
+            Quazer&apos;s real-time insights help me pinpoint exactly what I
+            need without the hassle.
           </p>
         </div>
         <div className='aspect-auto rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none'>
@@ -137,8 +138,8 @@ const Testomonials = () => (
           </div>
           <p className='mt-8'>
             {' '}
-            Quazer's AI-powered PDF reader has become an essential part of my
-            workflow. It’s incredibly efficient and easy to use.
+            Quazer&apos;s AI-powered PDF reader has become an essential part of
+            my workflow. It’s incredibly efficient and easy to use.
           </p>
         </div>
         <div className='aspect-auto rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none'>
@@ -163,8 +164,8 @@ const Testomonials = () => (
           <p className='mt-8'>
             Switching to Quazer was the best decision for our team. The
             customizable responses and multi-format support have significantly
-            enhanced our productivity. It's now so much easier to extract and
-            understand the key points from lengthy documents. Quazer is a
+            enhanced our productivity. It&apos;s now so much easier to extract
+            and understand the key points from lengthy documents. Quazer is a
             brilliant tool for any team dealing with complex documents.
           </p>
         </div>

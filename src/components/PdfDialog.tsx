@@ -22,7 +22,6 @@ const PdfDialog = ({ fileUrl }: { fileUrl: string }) => {
     setNumPages(numPages);
   };
 
-  console.log(width);
   return (
     <Dialog
       open={isOpen}

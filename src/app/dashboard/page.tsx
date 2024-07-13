@@ -1,14 +1,14 @@
-import Dashboard from "@/components/Dashboard";
-import prisma from "@/lib/prisma";
-import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-import { redirect } from "next/navigation";
+import Dashboard from '@/components/Dashboard';
+import prisma from '@/lib/prisma';
+import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
+import { redirect } from 'next/navigation';
 
 const Page = async () => {
   const { getUser } = getKindeServerSession();
   const user = await getUser();
 
   if (!user || !user.id) {
-    redirect("/auth-callback?origin=/dashboard");
+    redirect('/auth-callback?origin=/dashboard');
   }
   let dbUser;
   try {
@@ -21,9 +21,9 @@ const Page = async () => {
     console.error(error);
   }
 
-  console.log("dbUser", dbUser);
+  console.log('dbUser', dbUser);
 
-  if (!dbUser) redirect("/auth-callback?origin=dashboard");
+  if (!dbUser) redirect('/auth-callback?origin=dashboard');
 
   return <Dashboard />;
 };

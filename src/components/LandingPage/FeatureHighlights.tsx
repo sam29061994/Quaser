@@ -12,7 +12,7 @@ const FeatureHighlights = () => (
         />
 
         <div className='space-y-2'>
-          <h5 className='group-hover:text-highlight text-xl font-semibold text-gray-700 transition dark:text-white'>
+          <h5 className='text-xl font-semibold text-gray-700 transition group-hover:text-highlight dark:text-white'>
             Secure and Private
           </h5>
           <p className='text-gray-600 dark:text-gray-300'>
@@ -20,7 +20,7 @@ const FeatureHighlights = () => (
             handled.
           </p>
         </div>
-        <div className='group-hover:text-highlight flex items-center justify-between'>
+        <div className='flex items-center justify-between group-hover:text-highlight'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 24 24'
@@ -47,7 +47,7 @@ const FeatureHighlights = () => (
         />
 
         <div className='space-y-2'>
-          <h5 className='group-hover:text-highlight text-xl font-semibold text-gray-700 transition dark:text-white'>
+          <h5 className='text-xl font-semibold text-gray-700 transition group-hover:text-highlight dark:text-white'>
             Instant Answers
           </h5>
           <p className='text-gray-600 dark:text-gray-300'>
@@ -55,7 +55,7 @@ const FeatureHighlights = () => (
             responses.
           </p>
         </div>
-        <div className='group-hover:text-highlight flex items-center justify-between'>
+        <div className='flex items-center justify-between group-hover:text-highlight'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 24 24'
@@ -82,14 +82,14 @@ const FeatureHighlights = () => (
         />
 
         <div className='space-y-2'>
-          <h5 className='group-hover:text-highlight text-xl font-semibold text-gray-700 transition dark:text-white'>
+          <h5 className='text-xl font-semibold text-gray-700 transition group-hover:text-highlight dark:text-white'>
             Summarization
           </h5>
           <p className='text-gray-600 dark:text-gray-300'>
             Get concise summaries of lengthy documents in seconds.
           </p>
         </div>
-        <div className='group-hover:text-highlight flex items-center justify-between'>
+        <div className='flex items-center justify-between group-hover:text-highlight'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 24 24'
@@ -116,14 +116,14 @@ const FeatureHighlights = () => (
         />
 
         <div className='space-y-2'>
-          <h5 className='group-hover:text-highlight text-xl font-semibold text-gray-700 transition dark:text-white'>
+          <h5 className='text-xl font-semibold text-gray-700 transition group-hover:text-highlight dark:text-white'>
             User-Friendly Interface
           </h5>
           <p className='text-gray-600 dark:text-gray-300'>
             Enjoy a seamless experience with our intuitive dashboard.
           </p>
         </div>
-        <div className='group-hover:text-highlight flex items-center justify-between'>
+        <div className='flex items-center justify-between group-hover:text-highlight'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 24 24'

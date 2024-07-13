@@ -1,5 +1,5 @@
-import { TRPCError, initTRPC } from "@trpc/server";
-import { Context } from "./context";
+import { TRPCError, initTRPC } from '@trpc/server';
+import { Context } from './context';
 
 /**
  * Initialization of tRPC backend
@@ -13,7 +13,7 @@ const t = initTRPC.context<Context>().create();
 const isAuth = t.middleware(async (opts) => {
   if (!opts.ctx.userId) {
     throw new TRPCError({
-      code: "UNAUTHORIZED",
+      code: 'UNAUTHORIZED',
     });
   }
 

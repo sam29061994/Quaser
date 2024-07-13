@@ -65,14 +65,16 @@ const Me = () => {
                   </p>
                 </div>
                 <div className='relative mt-16'>
-                  <img
-                    className='absolute inset-x-0 bottom-10 left-1/2 -mb-1 w-1/2 xl:w-full -translate-x-2/3 xl:-translate-x-1/2'
+                  <Image
+                    className='absolute inset-x-0 bottom-10 left-1/2 -mb-1 w-1/2 -translate-x-2/3 xl:w-full xl:-translate-x-1/2'
                     src='https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg'
                     alt=''
+                    width={1000}
+                    height={1000}
                   />
 
                   <Image
-                    className='2xl:scale-210 relative w-1/2 xl:w-full xl:mx-auto xl:max-w-lg 2xl:origin-bottom'
+                    className='2xl:scale-210 relative w-1/2 xl:mx-auto xl:w-full xl:max-w-lg 2xl:origin-bottom'
                     src='/me/me.png'
                     alt=''
                     width={1000}

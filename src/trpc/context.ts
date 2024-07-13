@@ -1,5 +1,5 @@
-import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-import type { FetchCreateContextFnOptions } from "@trpc/server/adapters/fetch";
+import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
+import type { FetchCreateContextFnOptions } from '@trpc/server/adapters/fetch';
 
 /**
  * Creates context for an incoming request

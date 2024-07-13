@@ -4,9 +4,11 @@ const nextConfig = {
     config.resolve.alias.canvas = false;
     return config;
   },
-  images:{
-    remotePatterns:[{protocol:'https', hostname:'cdn-icons-png.flaticon.com'}]
-  }
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: 'cdn-icons-png.flaticon.com' },
+    ],
+  },
 };
 
 export default nextConfig;

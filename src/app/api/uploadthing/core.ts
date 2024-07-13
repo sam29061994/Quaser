@@ -55,7 +55,7 @@ export const ourFileRouter = {
         const totalPages = docs.length;
 
         const pineconeIndex = pinecone.Index('quasar');
-        
+
         const embeddings = new OpenAIEmbeddings({
           openAIApiKey: process.env.OPENAI_API_KEY,
         });

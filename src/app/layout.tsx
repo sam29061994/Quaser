@@ -7,6 +7,7 @@ import Providers from '@/components/Providers';
 import { Toaster } from '@/components/ui/toaster';
 import 'simplebar-react/dist/simplebar.min.css';
 import AppNavbar from '@/components/NavigationBar';
+import { Suspense } from 'react';
 
 const urbanist = Urbanist({ subsets: ['latin'] });
 
@@ -32,7 +33,7 @@ export default function RootLayout({
         >
           {true ? <AppNavbar /> : <Navbar />}
           <Toaster />
-          {children}
+          <Suspense fallback={null}>{children}</Suspense>
         </body>
       </Providers>
     </html>
