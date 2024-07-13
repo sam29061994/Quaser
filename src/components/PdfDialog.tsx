@@ -11,6 +11,7 @@ import SimpleBar from 'simplebar-react';
 import { Dialog, DialogContent, DialogTrigger } from './ui/dialog';
 import { useState } from 'react';
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+import 'core-js/full/promise/with-resolvers.js';
 
 const PdfDialog = ({ fileUrl }: { fileUrl: string }) => {
   const { toast } = useToast();

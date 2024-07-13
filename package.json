@@ -12,9 +12,6 @@
     "format:fix": "prettier --write --ignore-path .gitignore .",
     "postinstall": "prisma generate"
   },
-  "engines": {
-    "node": ">=22.0.0"
-  },
   "dependencies": {
     "@ai-sdk/openai": "^0.0.34",
     "@hookform/resolvers": "^3.6.0",
@@ -39,6 +36,7 @@
     "ai": "^3.2.16",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "core-js": "^3.37.1",
     "date-fns": "^3.6.0",
     "langchain": "^0.2.8",
     "lucide-react": "^0.396.0",
