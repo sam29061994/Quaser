@@ -20,7 +20,6 @@ export function cleanString(input: string) {
   return cleanedText;
 }
 
-
 export function getBaseUrl() {
   if (typeof window !== 'undefined')
     // browser should use relative path

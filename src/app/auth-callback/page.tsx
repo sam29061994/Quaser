@@ -8,7 +8,7 @@ const Page = () => {
   const searchParams = useSearchParams();
   const origin = searchParams.get('origin');
   const { data, isError, error } = trpc.authCallback.useQuery(undefined, {
-    retry: true,
+    retry: (count) => count < 3,
     retryDelay: 500,
   });
 
