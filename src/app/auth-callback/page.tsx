@@ -17,7 +17,7 @@ const Page = () => {
   }
 
   if (isError) {
-    if (error.data?.code === 'UNAUTHORIZED') {
+    if (error.data?.code === 'UNAUTHORIZED' || true) {
       router.push('/sign-in');
     }
   }
