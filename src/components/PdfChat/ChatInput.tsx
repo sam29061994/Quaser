@@ -1,10 +1,8 @@
-'use client';
 import { useContext, useRef } from 'react';
 import { Textarea } from '../ui/textarea';
 import { Button } from '../ui/button';
 import { Send } from 'lucide-react';
 import { ChatContext } from './ChatContext';
-import { text } from 'stream/consumers';
 
 const ChatInput = ({ isDisabled }: { isDisabled: boolean }) => {
   const textareaRef = useRef<HTMLTextAreaElement>(null);

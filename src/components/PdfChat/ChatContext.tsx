@@ -4,7 +4,6 @@ import { INFINITE_QUERY_LIMIT } from '@/config/infinite-query';
 import { useMutation } from '@tanstack/react-query';
 import { ChangeEvent, createContext, useRef, useState } from 'react';
 import { toast } from '../ui/use-toast';
-import { cleanString } from '@/lib/utils';
 
 type StreamResponse = {
   addMessage: () => void;
@@ -110,6 +109,8 @@ export const ChatContextProvider = ({
 
       const reader = stream.getReader();
       const decoder = new TextDecoder();
+
+      // accumulated response
       let done = false;
 
       // accumulated response
@@ -117,13 +118,10 @@ export const ChatContextProvider = ({
 
       while (!done) {
         const { value, done: doneReading } = await reader.read();
+
         done = doneReading;
         const chunkValue = decoder.decode(value, { stream: true });
-        console.log(accResponse);
-
-        accResponse += cleanString(chunkValue);
-
-        // append chunk to the actual message
+        accResponse += chunkValue;
         utils.getFileMessages.setInfiniteData(
           { fileId, limit: INFINITE_QUERY_LIMIT },
           (oldData) => {
@@ -174,6 +172,7 @@ export const ChatContextProvider = ({
       }
     },
     onError: (_, __, context) => {
+      console.log('error');
       setMessage(backupMessage.current);
       utils.getFileMessages.setData(
         { fileId },
@@ -181,6 +180,7 @@ export const ChatContextProvider = ({
       );
     },
     onSettled: async () => {
+      console.log('settled');
       setIsLoading(false);
       setMessage('');
     },

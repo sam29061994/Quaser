@@ -3,17 +3,11 @@ import prisma from '@/lib/prisma';
 import { SendMessageValidator } from '@/lib/validators';
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
 import { PineconeStore } from '@langchain/pinecone';
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest } from 'next/server';
 import { OpenAIEmbeddings } from '@langchain/openai';
-import { Content } from 'next/font/google';
 import { openAI } from '@/lib/openAI';
-import { openai } from '@ai-sdk/openai';
-import {
-  CoreSystemMessage,
-  CoreUserMessage,
-  StreamingTextResponse,
-  streamText,
-} from 'ai';
+import { StreamingTextResponse, OpenAIStream } from 'ai';
+import { ChatCompletionMessageParam } from 'openai/resources/index.mjs';
 
 export const POST = async (req: NextRequest) => {
   const res = await req.json();
@@ -78,7 +72,7 @@ export const POST = async (req: NextRequest) => {
       role: 'system',
       content:
         'Use the following pieces of context (or previous conversaton if needed) to answer the users question in markdown format.',
-    } as CoreSystemMessage,
+    },
     {
       role: 'user',
       content: `Use the following pieces of context (or previous conversaton if needed) to answer the users question in markdown format. \nIf you don't know the answer, just say that you don't know, don't try to make up an answer.
@@ -97,22 +91,23 @@ export const POST = async (req: NextRequest) => {
   ${results.map((r) => r.pageContent).join('\n\n')}
   
   USER INPUT: ${message}`,
-    } as CoreUserMessage,
+    },
   ];
-
-  const result = await streamText({
-    model: openai('gpt-3.5-turbo'),
-    messages: prompt,
+  const response = await openAI.chat.completions.create({
+    model: 'gpt-3.5-turbo',
+    temperature: 0,
+    stream: true,
+    messages: prompt as ChatCompletionMessageParam[],
   });
 
-  const stream = result.toAIStream({
-    async onFinal(completion) {
+  const stream = OpenAIStream(response, {
+    async onCompletion(completed) {
       await prisma.message.create({
         data: {
-          content: completion,
-          isUserMessage: false,
           fileId,
           userId,
+          content: completed,
+          isUserMessage: false,
         },
       });
     },
