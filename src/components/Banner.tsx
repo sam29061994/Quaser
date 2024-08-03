@@ -29,7 +29,7 @@ export default function Banner() {
         />
       </div>
       <div className='flex flex-wrap items-center gap-x-4 gap-y-2'>
-        <p className='text-sm leading-6 text-gray-900'>
+        <p className='text-xs leading-6 text-gray-900 md:text-sm'>
           <strong className='font-semibold'>Please Note</strong>
           <svg
             viewBox='0 0 2 2'
@@ -43,7 +43,7 @@ export default function Banner() {
         </p>
         <Link
           href='/me'
-          className='flex-none rounded-full bg-gray-900 px-3.5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900'
+          className='flex rounded-full bg-gray-900 px-3.5 py-2 text-xs font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 md:text-sm'
         >
           About Me <span aria-hidden='true'>&rarr;</span>
         </Link>

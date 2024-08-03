@@ -8,7 +8,7 @@ const Me = () => {
         <div className='flex-1 xl:flex'>
           <div className='px-4 py-6 sm:px-6 lg:pl-8 xl:flex-1 xl:pl-6'>
             {/* Main area */}
-            <PdfDisplay fileUrl='https://utfs.io/f/c305f117-32f9-46a3-9acd-d790274f31b9-7clalj.pdf' />
+            <PdfDisplay fileUrl='https://utfs.io/f/9323f125-d309-47f1-af2d-8f177a8a45e8-7clawy.pdf' />
           </div>
 
           <section className='overflow-hidde w-full pt-10 sm:py-16 xl:w-7/12 xl:pt-0 2xl:pt-16'>
@@ -51,7 +51,6 @@ const Me = () => {
                   <p className='mt-4 text-lg text-gray-600 dark:text-gray-300 md:mt-8'>
                     <span className='relative inline-block'>
                       <span className='absolute bottom-0.5 inline-block h-2 w-full bg-yellow-300 dark:bg-gray-900'></span>
-                      <span className='relative'> Have a question? </span>
                     </span>
                     <br className='block sm:hidden' />
                     <span className='px-2'>

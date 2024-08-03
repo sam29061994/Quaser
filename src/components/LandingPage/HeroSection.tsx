@@ -7,9 +7,13 @@ const HeroSection = () => (
     <Background />
     <MaxWidthWrapper className='mb-12 mt-28 flex flex-col items-center justify-center text-center sm:mt-40'>
       <div className='mx-auto mb-12 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all'>
-        <p className='text-sm font-semibold dark:text-zinc-800'>
-          Quaser is now free to use!
-        </p>
+        <a
+          className='text-sm font-semibold dark:text-zinc-800'
+          target='_blank'
+          href='https://github.com/sam29061994/Quaser'
+        >
+          Github Link!
+        </a>
       </div>
 
       <h1 className='max-w-4xl text-5xl font-superbold md:text-6xl lg:text-7xl'>
