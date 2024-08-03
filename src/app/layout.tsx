@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Urbanist } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
-import Navbar from '@/components/Navbar';
 import Providers from '@/components/Providers';
 import { Toaster } from '@/components/ui/toaster';
 import 'simplebar-react/dist/simplebar.min.css';
@@ -43,7 +42,7 @@ export default function RootLayout({
             'sans-serif'
           )}
         >
-          {true ? <AppNavbar /> : <Navbar />}
+          <AppNavbar />
           <Toaster />
           <Suspense fallback={null}>{children}</Suspense>
         </body>

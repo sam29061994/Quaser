@@ -21,32 +21,31 @@ const Me = () => {
                     Sam Barot
                   </h2>
                   <p className='mt-3 max-w-lg text-lg leading-relaxed text-gray-500 dark:text-gray-200 md:mt-8'>
-                    I’m a front-end heavy full-stack engineer with a knack for
-                    optimizing application performance, specializing in
-                    migrations to Next.js and React.js. I have a solid
-                    background in developing applications independently and
-                    collaboratively, with expertise in unit, integration, and
+                    I’m a front-end heavy full-stack engineer with a strong
+                    passion for optimizing application performance, specializing
+                    in migrations to Next.js and React.js. I have a robust
+                    foundation in developing applications independently and
+                    collaboratively, with a focus on unit, integration, and
                     end-to-end testing.
                   </p>
 
                   <p className='mt-3 max-w-lg text-lg font-thin leading-relaxed text-gray-500 dark:text-gray-200 md:mt-8'>
-                    At Arc’teryx, I developed a new landing page application
-                    using React.js and TypeScript. This involved creating and
-                    supporting diverse designs for weekly homepage campaigns,
-                    where I collaborated closely with Product Designers to
-                    ensure visually appealing and UX-friendly designs. Utilizing
-                    AWS S3 buckets, CloudFront, and Lambda edge functions, I
-                    optimized performance and scalability for the application.
-                    Additionally, I administered Fastly CDN configurations,
-                    managed Terraform files for route additions, and optimized
-                    HTTP headers to enhance application delivery.
+                    For example, the Quaser app you’re seeing is built using
+                    Next.js 14 with App Router and leverages a modern tech stack
+                    including Tailwind CSS for streamlined styling and Shadcn UI
+                    components for enhanced user interfaces. It utilizes
+                    TypeScript for type safety and integrates with the tRPC
+                    protocol and Prisma ORM, utilizing a Supabase PostgreSQL
+                    database. Authentication and session management are handled
+                    through the Kindle authentication provider.
                   </p>
 
                   <p className='mt-3 max-w-lg text-lg font-thin leading-relaxed text-gray-500 dark:text-gray-200 md:mt-8'>
-                    My previous role at Ooma Inc. further strengthened my
-                    expertise in creating reusable components with Material UI,
-                    transitioning teams to TypeScript, and improving application
-                    efficiency through cache optimization strategies.
+                    The app also incorporates server components to optimize
+                    performance by selectively shipping React libraries to the
+                    browser only when necessary. Deployed on Vercel, Quaser is
+                    currently a work in progress, continuously evolving to
+                    enhance functionality and user experience.
                   </p>
 
                   <p className='mt-4 text-lg text-gray-600 dark:text-gray-300 md:mt-8'>
@@ -55,12 +54,14 @@ const Me = () => {
                       <span className='relative'> Have a question? </span>
                     </span>
                     <br className='block sm:hidden' />
-                    <span className='px-2'>Give me a call on</span>
+                    <span className='px-2'>
+                      Have a question? Feel free to reach out to me on{' '}
+                    </span>
                     <p
                       title=''
                       className='text-sky-500 transition-all duration-200 hover:text-sky-600 hover:underline dark:text-sky-400 dark:hover:text-sky-500'
                     >
-                      519-897-2840
+                      519-897-2840 | sam29061994@gmail.com
                     </p>
                   </p>
                 </div>
